@@ -1,9 +1,6 @@
-# Template Python Project
+# Genuary 2023
 
 <p align="center">
-    <a href="https://codecov.io/gh/{{ repo }}">
-        <img src="https://codecov.io/gh/{{ repo }}/main/graph/badge.svg?token=4I7OINJKAO"/>
-    </a>
     <a href="https://github.com/psf/black">
         <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
     </a>
@@ -12,11 +9,15 @@
     </a>
 </p>
 
-Template python project that sets up standard developer requirements, precommits and CI tools.
+Repo for [Genuary 2023](https://genuary.art/).
 
-## Development Set Up
+## Set Up
+
+Developed using Python 3.9.13.
 
 ```
-    pip install -r requirements-dev.txt
+    python -m venv .venv
+    source .venv/Scripts/activate
+    pip install -r requirements.txt -r requirements-dev.txt
     pre-commit install
 ```
