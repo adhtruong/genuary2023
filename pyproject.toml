@@ -24,4 +24,4 @@ source = ["src", "tests"]
 profile = "black"
 
 [tool.pytest.ini_options]
-addopts = "-ra -v --durations=5 --cov=src"
+addopts = "-ra -v --durations=5 --cov=cairo_utils"
