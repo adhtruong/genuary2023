@@ -1,21 +1,15 @@
 from itertools import cycle
-from math import cos, pi, sin, sqrt
+from math import pi, sqrt
 from random import random, seed
 
 from more_itertools import numeric_range
 
 from cairo_utils import Context
 from cairo_utils.core import BLACK, WHITE, write_to_png
+from cairo_utils.geometry import from_radial
 
 SIZE = 6_000
 OUTPUT = "run/day03_glitch.png"
-
-
-def from_radial(radius: float, angle: float) -> tuple[float, float]:
-    return (
-        radius * cos(angle),
-        radius * sin(angle),
-    )
 
 
 def draw_circle(
